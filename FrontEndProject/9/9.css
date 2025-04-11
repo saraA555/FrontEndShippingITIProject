@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-label.required::after {
+    content: " *";
+    color: red;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.add-btn {
+    background-color: #0dcaf0;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.shipping-option {
+    background-color: #7952b3;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+.payment-option {
+    background-color: #7952b3;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.dropdown-menu {
+    width: 100%;
+    text-align: right;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-control, .form-select {
+    border-radius: 0;
+}
+
+.table-responsive {
+    margin-bottom: 20px;
+}

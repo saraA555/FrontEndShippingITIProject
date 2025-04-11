@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Request</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--CSS -->
+    <link rel="stylesheet" href="9.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4">Add Request</h2>
+        
+        <form>
+            <!-- First Section -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="type" class="form-label required">Type</label>
+                            <select class="form-select" id="type" required>
+                                <option selected>Select Type</option>
+                                <option>Personal</option>
+                                <option>Business</option>
+                            </select>
+                        </div>
+                        <div class="col-md-8">
+                            <label for="customerName" class="form-label required">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="id1" class="form-label required">TelephoneNumber1</label>
+                            <input type="text" class="form-control" id="id1" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="id2" class="form-label">TelephoneNumber2</label>
+                            <input type="text" class="form-control" id="id2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="governorate" class="form-label required">Governorate</label>
+                            <select class="form-select" id="governorate" required>
+                                <option selected>Select Governorate</option>
+                                <option>Cairo</option>
+                                <option>Alexandria</option>
+                                <option>Giza</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="city" class="form-label required">City</label>
+                            <select class="form-select" id="city" required>
+                                <option selected>Select City</option>
+                                <option>Downtown</option>
+                                <option>Suburb</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="district" class="form-label required">District</label>
+                            <select class="form-select" id="district" required>
+                                <option selected>Select District</option>
+                                <option>District 1</option>
+                                <option>District 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="street" class="form-label required">Street & Building</label>
+                            <input type="text" class="form-control" id="street" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="landmark" class="form-label">Nearest Landmark</label>
+                            <input type="text" class="form-control" id="landmark">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="floor" class="form-label required">Floor & Apartment</label>
+                            <input type="text" class="form-control" id="floor" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="size" class="form-label required">Size</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="size" value="Rectangular Strip" readonly>
+                                <button class="btn btn-outline-secondary" type="button">▼</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Table -->
+            <div class="table-responsive mb-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Weight (kg)</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button type="button" class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-end">
+                                <button type="button" class="add-btn">Add Product</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="notes" class="form-label">Notes</label>
+                    <textarea class="form-control" id="notes" rows="3"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-2">
+                        <div class="col-12">
+                            <label class="form-label required">Request Type</label>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-6">
+                            <label for="totalWeight" class="form-label">Total Weight (kg)</label>
+                            <input type="text" class="form-control" id="totalWeight" readonly>
+                        </div>
+                        <div class="col-6">
+                            <label for="totalWeightKg" class="form-label">Total Weight (kg)</label>
+                            <input type="text" class="form-control" id="totalWeightKg" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="phone" class="form-label required">Mobile Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="01234567890" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="altPhone" class="form-label required">Alternative Phone</label>
+                    <input type="tel" class="form-control" id="altPhone" placeholder="01234567890" required>
+                </div>
+            </div>
+
+            <!-- Shipping Type Section -->
+            <div class="form-section">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label class="form-label required float-end">Shipping Type</label>
+                    </div>
+                </div>
+                
+                <div class="dropdown mb-3">
+                    <button class="form-control text-start dropdown-toggle" type="button" id="shippingDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Shipping Type
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="shippingDropdown">
+                        <li><div class="shipping-option">Regular Shipping</div></li>
+                        <li><div class="shipping-option">Shipping in 24 Hours</div></li>
+                        <li><div class="shipping-option">Shipping within 15 Days</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Payment Type Section -->
+            <div class="form-section">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label class="form-label required float-end">Payment Type</label>
+                    </div>
+                </div>
+                
+                <div class="dropdown mb-3">
+                    <button class="form-control text-start dropdown-toggle" type="button" id="paymentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Payment Type
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="paymentDropdown">
+                        <li><div class="payment-option">Payment Interface</div></li>
+                        <li><div class="payment-option">Prepaid</div></li>
+                        <li><div class="payment-option">Cash on Delivery</div></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Products Table (Second Instance) -->
+            <div class="table-responsive mb-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Weight (kg)</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="number" class="form-control" value="1"></td>
+                            <td><input type="number" class="form-control" value="1"></td>
+                            <td><button type="button" class="delete-btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control"></td>
+                            <td><input type="number" class="form-control" value="1"></td>
+                            <td><input type="number" class="form-control" value="1"></td>
+                            <td><button type="button" class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-end">
+                                <button type="button" class="add-btn">Add Product</button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="text-end">
+                <button type="submit" class="submit-btn">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  JavaScript
+    <script src="script.js"></script> -->
+</body>
+</html>

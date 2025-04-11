@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <!-- Header -->
+            <div class="header">
+                <button class="btn btn-primary">Add Employee</button>
+                <div>
+                    <i class="fas fa-home me-2"></i>
+                    <span class="mb-0">>>Employees</span>
+                    <div class="d-flex align-items-center">
+                        <!-- <i class="fas fa-home me-2"></i>
+                        <span>Home</span> -->
+                        <span class="mx-2"></span>
+                        <h1>Employees</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="search-container">
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>Show</span>
+                        <i class="fas fa-chevron-down ms-2"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">10</a></li>
+                        <li><a class="dropdown-item" href="#">25</a></li>
+                        <li><a class="dropdown-item" href="#">50</a></li>
+                    </ul>
+                </div>
+                <div class="input-group" style="max-width: 300px;">
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 50px;">#</th>
+                            <th scope="col" style="width: 50px;">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Branch</th>
+                            <th scope="col">Permissions</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="checkbox-custom checked"></div>
+                            </td>
+                            <td>1</td>
+                            <td>Manager</td>
+                            <td>groupad@gmail.com</td>
+                            <td>0568756998</td>
+                            <td>Cairo</td>
+                            <td>Manager</td>
+                            <td>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                            <td><button class="btn btn-sm action-btn blue-btn"><i class="fas fa-edit"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox-custom checked"></div>
+                            </td>
+                            <td>2</td>
+                            <td>Test</td>
+                            <td>admin@admin.test</td>
+                            <td>01234567523</td>
+                            <td>Bethlehem</td>
+                            <td>Sales</td>
+                            <td>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                            <td><button class="btn btn-sm action-btn blue-btn"><i class="fas fa-edit"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox-custom checked"></div>
+                            </td>
+                            <td>3</td>
+                            <td>Admin</td>
+                            <td>x@x.xx</td>
+                            <td>01123698754</td>
+                            <td>Cairo</td>
+                            <td>Manager</td>
+                            <td>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                            <td><button class="btn btn-sm action-btn blue-btn"><i class="fas fa-edit"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox-custom checked"></div>
+                            </td>
+                            <td>4</td>
+                            <td>New User</td>
+                            <td>newuser@gmail.com</td>
+                            <td>2534567654</td>
+                            <td>New Cairo</td>
+                            <td>Manager</td>
+                            <td>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                            <td><button class="btn btn-sm action-btn blue-btn"><i class="fas fa-edit"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox-custom checked"></div>
+                            </td>
+                            <td>5</td>
+                            <td>Reham Jassem</td>
+                            <td>reham@gmail.com</td>
+                            <td>01168855588</td>
+                            <td>North Sinai</td>
+                            <td>Branch Manager</td>
+                            <td>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                            <td><button class="btn btn-sm action-btn blue-btn"><i class="fas fa-edit"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkbox-custom checked"></div>
+                            </td>
+                            <td>6</td>
+                            <td>Hatem</td>
+                            <td>admin12442@admin.com</td>
+                            <td>3453457674</td>
+                            <td>Cairo</td>
+                            <td>Branch Manager</td>
+                            <td>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                            <td><button class="btn btn-sm action-btn blue-btn"><i class="fas fa-edit"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Cost Settings</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--  CSS -->
+    <link rel="stylesheet" href="5.css">
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="settings-container">
+            <h5 class="settings-title">Additional Shipping Cost Settings for Weight</h5>
+            
+            <div class="row align-items-center mb-3">
+                <div class="col-md-6 text-end">
+                    <label class="settings-label">Basic shipping cost by Pound (from 0 to 5 kg)</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control" value="10">
+                </div>
+                <div class="col-md-1 text-start">
+                    <span class="unit-label">kg</span>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-end">
+                    <label class="settings-label">Additional cost by Pound per kg (above 5 kg)</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" class="form-control" value="100">
+                </div>
+                <div class="col-md-2 text-start">
+                    <button class="btn btn-primary save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

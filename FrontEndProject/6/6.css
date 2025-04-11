@@ -1,0 +1,143 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.main-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.search-input {
+    border-radius: 4px;
+    font-size: 14px;
+    height: 38px;
+    width: 200px;
+}
+
+.form-select {
+    border-radius: 4px;
+    font-size: 14px;
+    height: 38px;
+}
+
+table {
+    margin-bottom: 0 !important;
+}
+
+table thead th {
+    background-color: #f0f0f0;
+    border: none !important;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table tbody td {
+    border: none !important;
+    color: #555;
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-row-alt {
+    background-color: #f9f9f9;
+}
+
+/* Toggle Switch */
+.switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 44px;
+}
+
+.switch input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: white;
+    bottom: 4px;
+    content: "";
+    height: 16px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 16px;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Action Buttons */
+.action-btn {
+    border: none;
+    border-radius: 4px;
+    margin: 0 2px;
+    padding: 6px 10px;
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+    color: white;
+}
